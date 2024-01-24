@@ -1,0 +1,15 @@
+.overlay img {
+    display: none;
+    border-radius: 0.375rem;
+}
+
+.overlay:hover img {
+    border-radius: 0.375rem;
+    display: block;
+
+}
+
+.overlay:hover {
+    border-radius: 0.375rem;
+    background-color: hsl(178, 100%, 50%, 0.5);
+}

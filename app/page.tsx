@@ -4,15 +4,32 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className="p-2 md:p-0 min-h-screen flex items-center justify-center bg-[hsl(217,54%,11%)]">
-      <div className="bg-[hsl(216,50%,16%)] p-5 rounded-md shadow-md md:w-[25vw]">
-        <Image
-          src="/images/image-equilibrium.jpg"
-          alt="Card Image"
-          width={700}
-          height={700}
-          className="rounded-md"
-        />
-        <div className="mt-4 text-white">Equilibrium #3429</div>
+      <div className="hover:cursor-pointer hover:scale-105 transition-all bg-[hsl(216,50%,16%)] p-5 rounded-md shadow-md md:w-[25vw]">
+        <div className={`${styles.imageContainer} relative`}>
+          <Image
+            src="/images/image-equilibrium.jpg"
+            alt="Card Image"
+            width={700}
+            height={700}
+            className={`${styles.image_hover} transition-all rounded-md`}
+          />
+          <div
+            className={`${styles.overlay} top-0 absolute flex items-center justify-center w-full h-full transition-all`}
+          >
+            <Image
+              src="/images/icon-view.svg"
+              alt="Preview Image"
+              width={35}
+              height={35}
+              className={`transition-all`}
+            />
+          </div>
+        </div>
+        <div className="mt-4">
+          <p className="text-white hover:text-[#00fff7] transition-all hover:scale-[1.02]">
+            Equilibrium #3429
+          </p>
+        </div>
         <div className="mt-4 text-[rgba(255,255,255,0.4)] font-extralight text-md">
           Our Equilibrium collection promotes balance and calm.
         </div>
@@ -53,7 +70,9 @@ export default function Home() {
           </span>
           <span className="ml-4 flex items-center">
             <p className="text-[#8bacda] text-xs">Creation of</p>{" "}
-            <p className="ml-1 text-white text-xs">Basil Maben</p>
+            <p className="ml-1 text-white text-xs hover:text-[#00fff7] hover:scale-[1.05] transition-all">
+              Basil Maben
+            </p>
           </span>
         </div>
       </div>
