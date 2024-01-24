@@ -26,7 +26,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-4">
-          <p className="text-white hover:text-[#00fff7] transition-all hover:scale-[1.02]">
+          <p className="text-white hover:text-[#00fff7] transition-all hover:scale-[1.02] text-xl">
             Equilibrium #3429
           </p>
         </div>
@@ -43,7 +43,7 @@ export default function Home() {
                 alt="eth-icon"
               />
             </span>
-            <span className="ml-1 text-[#00fff7] text-xs">0.041ETH</span>
+            <span className="ml-1 text-[#00fff7] text-md">0.041ETH</span>
           </div>
           <div className="flex ml-auto items-center mt-2 md:mt-0">
             <span>
@@ -54,7 +54,7 @@ export default function Home() {
                 alt="eth-icon"
               />
             </span>
-            <span className="ml-1 text-[#8bacda] text-xs">3 days left</span>
+            <span className="ml-1 text-[#8bacda] text-md">3 days left</span>
           </div>
         </div>
         <hr className="mt-3 mb-3 border-t border-[#2f415b]" />
@@ -69,8 +69,8 @@ export default function Home() {
             />
           </span>
           <span className="ml-4 flex items-center">
-            <p className="text-[#8bacda] text-xs">Creation of</p>{" "}
-            <p className="ml-1 text-white text-xs hover:text-[#00fff7] hover:scale-[1.05] transition-all">
+            <p className="text-[#8bacda] text-md">Creation of</p>{" "}
+            <p className="ml-1 hover:ml-[0.375rem] text-white text-md hover:text-[#00fff7] hover:scale-[1.05] transition-all">
               Basil Maben
             </p>
           </span>
