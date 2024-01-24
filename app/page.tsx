@@ -48,7 +48,7 @@ export default function Home() {
               width={40}
               height={40}
               alt="eth-icon"
-              className="border rounded-full mb-2 md:mb-0 "
+              className="flex items-center justify-center border rounded-full mb-2 md:mb-0 "
             />
           </span>
           <span className="ml-4 flex items-center">
